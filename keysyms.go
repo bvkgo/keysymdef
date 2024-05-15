@@ -2016,7 +2016,7 @@ const (
 
 )
 
-var stringKeysyms = map[string]xproto.Keysym{
+var String2KeysymMap = map[string]xproto.Keysym{
 	"XK_VoidSymbol":                  0xffffff,
 	"XK_BackSpace":                   0xff08,
 	"XK_Tab":                         0xff09,
@@ -4028,7 +4028,7 @@ var stringKeysyms = map[string]xproto.Keysym{
 	"XK_Sinh_kunddaliya":             0x1000df4,
 }
 
-var keysymCodePoints = map[xproto.Keysym]rune{
+var Keysym2CodepointMap = map[xproto.Keysym]rune{
 	XK_space:                       0x20,   /* U+0020 SPACE */
 	XK_exclam:                      0x21,   /* U+0021 EXCLAMATION MARK */
 	XK_quotedbl:                    0x22,   /* U+0022 QUOTATION MARK */

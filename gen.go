@@ -147,11 +147,11 @@ const (
 `+constsBuf.String()+`
 )
 
-var stringKeysyms = map[string]xproto.Keysym{
+var String2KeysymMap = map[string]xproto.Keysym{
 `+symsBuf.String()+`
 }
 
-var keysymCodePoints = map[xproto.Keysym]rune{
+var Keysym2CodepointMap = map[xproto.Keysym]rune{
 `+codesBuf.String()+`
 }
 `)
